@@ -204,6 +204,7 @@ public class CameraController : MonoBehaviour
     {
         isAiming = false;
         canTakePhoto = false;
+        isDisplayingPhoto = true;
         
         // Detect items in camera frame
         DetectItemsInFrame();
@@ -506,7 +507,6 @@ public class CameraController : MonoBehaviour
     /// </summary>
     private void ShowCapturedPhoto()
     {
-        isDisplayingPhoto = true;
         // Activate panel
         photoDisplayPanel.SetActive(true);
         
