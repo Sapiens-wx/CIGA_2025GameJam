@@ -951,7 +951,7 @@ MonoBehaviour:
   - {fileID: 7898893798016295487}
   - {fileID: 8366238237793530328}
   - {fileID: 6833152738024275485}
-  duration: 0.2
+  duration: 0.5
 --- !u!1 &7381454799047042496
 GameObject:
   m_ObjectHideFlags: 0
