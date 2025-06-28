@@ -989,8 +989,8 @@ MonoBehaviour:
   - {fileID: 8366238237793530328}
   - {fileID: 6833152738024275485}
   duration: 0.5
-  shakeAmount: 0
-  shakeDuration: 0
+  shakeAmount: 5
+  shakeDuration: 0.1
 --- !u!1 &7381454799047042496
 GameObject:
   m_ObjectHideFlags: 0
