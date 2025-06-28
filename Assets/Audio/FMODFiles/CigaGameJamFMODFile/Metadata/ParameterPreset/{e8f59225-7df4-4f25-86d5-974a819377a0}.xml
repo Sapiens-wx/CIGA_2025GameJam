@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{e8f59225-7df4-4f25-86d5-974a819377a0}">
+		<property name="name">
+			<value>ambience_index</value>
+		</property>
+		<relationship name="folder">
+			<destination>{04873908-2da5-4242-91b9-981d494a9975}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{06525283-5fcd-4600-8ae4-98e06bfe4ceb}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{06525283-5fcd-4600-8ae4-98e06bfe4ceb}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>empty</value>
+			<value>room</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
