@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{e8ad237a-a0bf-4923-a62b-bef5a656b6a1}">
+		<property name="name">
+			<value>book_state</value>
+		</property>
+		<relationship name="folder">
+			<destination>{04873908-2da5-4242-91b9-981d494a9975}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{bcff4ecc-fea2-4896-b748-1f4164206b5e}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{bcff4ecc-fea2-4896-b748-1f4164206b5e}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>4</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>open</value>
+			<value>close</value>
+			<value>flip_next</value>
+			<value>flip_prev</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
