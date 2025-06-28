@@ -70,7 +70,7 @@ public class Book : MonoBehaviour
         float t=0, dt=Time.fixedDeltaTime/duration;
         Vector3 startPos=panel.transform.position;
         while(t<1){
-            panel.transform.position=Vector3.Lerp(startPos, to, t);
+            panel.transform.position=Vector3.Lerp(startPos, to, Easing.OutExpo(t));
             t+=dt;
             yield return wait;
         }
