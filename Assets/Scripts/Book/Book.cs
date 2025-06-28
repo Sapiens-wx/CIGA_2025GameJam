@@ -3,15 +3,16 @@ using UnityEngine;
 
 public class Book : MonoBehaviour
 {
-    [SerializeField] GameObject panel;
+    [SerializeField] GameObject panel, bookPanel;
     [SerializeField] BookPage[] pages;
     [Header("Animation Params")]
     [SerializeField] float duration;
+    [SerializeField] float shakeAmount, shakeDuration;
 
     bool isOpen;
     Vector3 displayPosition, hidePosition;
     int currentPage;
-    Coroutine openCoroutine, closeCoroutine;
+    Coroutine openCoroutine, closeCoroutine, shakeCoro;
     void Awake(){
         DisplayPage(-1);
         displayPosition=panel.transform.position;
@@ -55,14 +56,17 @@ public class Book : MonoBehaviour
             panel.SetActive(false);
     }
     int GetCurrentPageIndex(){
-        return 0;
+        if(SceneController.Instance==null) return 0;
+        return SceneController.Instance.CurrentDay;
     }
     public void NextPage(int offset){
+        if(shakeCoro!=null) return;
         int newPage=currentPage+offset;
         if(newPage>=0&&newPage<pages.Length){
             currentPage=newPage;
             DisplayPage(currentPage);
         }
+        shakeCoro=StartCoroutine(Shake(-offset));
     }
     IEnumerator MoveTo(Vector3 to, System.Action callback){
         WaitForFixedUpdate wait=new WaitForFixedUpdate();
@@ -76,5 +80,22 @@ public class Book : MonoBehaviour
         }
         panel.transform.position=to;
         callback?.Invoke();
+    }
+    IEnumerator Shake(int dir){
+        Vector3 startPos=bookPanel.transform.position, toPos=startPos+new Vector3(dir*shakeAmount,0,0);
+        float t=0, dt=Time.fixedDeltaTime/(shakeDuration/2);
+        WaitForFixedUpdate wait=new WaitForFixedUpdate();
+        while(t<1){
+            bookPanel.transform.position=Vector3.Lerp(startPos, toPos, Easing.InOutSine(t));
+            t+=dt;
+            yield return wait;
+        }
+        t=0;
+        while(t<1){
+            bookPanel.transform.position=Vector3.Lerp(toPos, startPos, Easing.InOutSine(t));
+            t+=dt;
+            yield return wait;
+        }
+        shakeCoro=null;
     }
 }
