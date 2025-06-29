@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{63014597-c70e-4768-b551-1c58208fcb9e}">
+		<property name="assetPath">
+			<value>camera/camera_zoom_in.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.43267573696145123</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2c400609-c252-4bc0-accf-037d52993626}</destination>
+		</relationship>
+	</object>
+</objects>

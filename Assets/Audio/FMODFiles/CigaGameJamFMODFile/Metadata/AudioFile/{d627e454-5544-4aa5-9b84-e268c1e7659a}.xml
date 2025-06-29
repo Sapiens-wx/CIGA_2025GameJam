@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{d627e454-5544-4aa5-9b84-e268c1e7659a}">
 		<property name="assetPath">
-			<value>camera/camera_take_picture.ogg</value>
+			<value>camera/camera_snap.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

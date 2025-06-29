@@ -11,9 +11,16 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference ambience;
 
     [field: Header("SFX")]
-    [field: SerializeField] public EventReference bookUI;
+    [field: SerializeField] public EventReference bookFlipNext;
+    [field: SerializeField] public EventReference bookFlipPrev;
+    [field: SerializeField] public EventReference bookOpen;
+    [field: SerializeField] public EventReference bookClose;
+    [field: SerializeField] public EventReference cameraEnter;
+    [field: SerializeField] public EventReference cameraExit;
+    [field: SerializeField] public EventReference cameraZoomIn;
+    [field: SerializeField] public EventReference cameraZoomOut;
     [field: SerializeField] public EventReference cameraTakePic;
-    [field: SerializeField] public EventReference cameraPrint;
+    [field: SerializeField] public EventReference cameraKeepPic;
     public static FMODEvents instance { get; private set; }
     private void Awake()
     {

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{5d275c17-7744-480b-920f-454986a39faf}">
+		<property name="assetPath">
+			<value>camera/camera_exit.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.43267573696145123</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2c400609-c252-4bc0-accf-037d52993626}</destination>
+		</relationship>
+	</object>
+</objects>

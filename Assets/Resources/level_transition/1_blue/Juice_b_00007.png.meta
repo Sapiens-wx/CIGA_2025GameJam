@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Juice_b_00007_0: 198638417855512160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
