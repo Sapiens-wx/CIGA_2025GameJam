@@ -91,7 +91,7 @@ public class AudioManager : MonoBehaviour
     //for testing
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Q))
+        /*if(Input.GetKeyDown(KeyCode.Q))
         {
             StartCoroutine(AudioCameraEnter());
         }
@@ -130,7 +130,7 @@ public class AudioManager : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.F))
         {
             AudioPrevPage();
-        }
+        }*/
     }
 
 

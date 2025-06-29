@@ -67,10 +67,10 @@ MonoBehaviour:
   Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638867423791961440
+  lastModified: 638867433131574701
   FileSizes:
   - Name: Desktop
-    Value: 1526
+    Value: 1576
   Exists: 1
 --- !u!114 &-6928326039667486643
 MonoBehaviour:
@@ -116,10 +116,10 @@ MonoBehaviour:
   Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638867423791936334
+  lastModified: 638867433131564648
   FileSizes:
   - Name: Desktop
-    Value: 1074
+    Value: 1454
   Exists: 1
 --- !u!114 &-4562999281147069190
 MonoBehaviour:
@@ -136,10 +136,10 @@ MonoBehaviour:
   Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 638867424484293138
+  lastModified: 638867431512249848
   FileSizes:
   - Name: Desktop
-    Value: 1597536
+    Value: 1597760
   Exists: 1
 --- !u!114 &-4372193665880968447
 MonoBehaviour:
@@ -285,7 +285,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -7114574576164188412}
   cacheVersion: 131848
-  cacheTime: 638867424484293138
+  cacheTime: 638867433131574701
   SerializableEventsDict:
   - key: event:/music/music
     index: 0
