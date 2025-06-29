@@ -12,29 +12,24 @@ public class CGSceneController : MonoBehaviour
     private void Start()
     {
         animator.Play(animationStateName);
-
-        if (cgAudio != null && audioSource != null)
-        {
-            audioSource.clip = cgAudio;
-            audioSource.Play();
-        }
-
+        AudioManager.instance.AudioPlayCG(AudioCGType.Blue);
         StartCoroutine(WaitForAnimationEnd());
     }
 
     private IEnumerator WaitForAnimationEnd()
     {
-
+        // 等动画开始播放
         yield return null;
 
         AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
 
+        // 等待动画播放完成（normalizedTime >= 1）
         while (!state.IsName(animationStateName) || state.normalizedTime < 1f)
         {
             yield return null;
             state = animator.GetCurrentAnimatorStateInfo(0);
         }
 
-        SceneController.Instance.LoadScene(SceneType.GamePlay1);
+        SceneController.Instance.LoadScene(SceneType.GamePlay2);
     }
 }
