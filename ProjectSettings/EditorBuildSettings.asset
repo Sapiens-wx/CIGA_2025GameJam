@@ -20,6 +20,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpecialScene.unity
     guid: ca046ddd477a65b49934cecce141a5ba
+  - enabled: 1
+    path: Assets/Scenes/GamePlay2.unity
+    guid: 19f560f95247488499b38edd40625fcc
+  - enabled: 1
+    path: Assets/Scenes/GamePlay3.unity
+    guid: 7d5fb48f1bfe44b44abbf2a5fbf9f445
+  - enabled: 1
+    path: Assets/Scenes/GamePlay4.unity
+    guid: 39c54e51123c6bf48839824dd7e09bd8
+  - enabled: 1
+    path: Assets/Scenes/CG2.unity
+    guid: ab61bf7386b58544d9a1bf0b18ae2647
+  - enabled: 1
+    path: Assets/Scenes/CG3.unity
+    guid: 58d0707a84670aa4693807d2acb7eb6c
+  - enabled: 1
+    path: Assets/Scenes/CG4.unity
+    guid: 53a86396946ebac4ab807f0337b2c166
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
