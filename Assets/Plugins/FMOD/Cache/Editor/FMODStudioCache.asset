@@ -217,7 +217,7 @@ MonoBehaviour:
   Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 638867540596015108
+  lastModified: 638867805095696094
   FileSizes:
   - Name: Desktop
     Value: 1900096
@@ -370,7 +370,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -7114574576164188412}
   cacheVersion: 131848
-  cacheTime: 638867540596015108
+  cacheTime: 638867805095696094
   SerializableEventsDict:
   - key: event:/music/music
     index: 0
@@ -660,7 +660,7 @@ MonoBehaviour:
   Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/music.bank
   Name: music
   StudioPath: bank:/music
-  lastModified: 638867413403561534
+  lastModified: 638867805075730218
   FileSizes:
   - Name: Desktop
     Value: 588512

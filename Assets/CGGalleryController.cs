@@ -13,8 +13,6 @@ public class CGSceneController : MonoBehaviour
     {
         animator.Play(animationStateName);
 
-        AudioManager.instance.AudioPlayCG(AudioCGType.Apple);
-
         StartCoroutine(WaitForAnimationEnd());
     }
 
