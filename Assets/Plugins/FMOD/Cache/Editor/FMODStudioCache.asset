@@ -1,5 +1,254 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8675468208654716979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/amb/ambience_index
+  m_EditorClassIdentifier: 
+  Name: ambience_index
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3030216859
+    data2: 1361187898
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - empty
+  - room
+  Exists: 1
+--- !u!114 &-7166299860268630792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/music_index
+  m_EditorClassIdentifier: 
+  Name: music_index
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2171842963
+    data2: 106095529
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - empty
+  - menu
+  Exists: 1
+--- !u!114 &-7114574576164188412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638867433131574701
+  FileSizes:
+  - Name: Desktop
+    Value: 1576
+  Exists: 1
+--- !u!114 &-6928326039667486643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/env/amb
+  m_EditorClassIdentifier: 
+  Path: event:/env/amb
+  Guid:
+    Data1: -1693708621
+    Data2: 1217509492
+    Data3: 577401500
+    Data4: -31076615
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8675468208654716979}
+  - {fileID: 7218242998849392172}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5839953323439518742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638867433131564648
+  FileSizes:
+  - Name: Desktop
+    Value: 1454
+  Exists: 1
+--- !u!114 &-4562999281147069190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/sfx.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/sfx.bank
+  Name: sfx
+  StudioPath: bank:/sfx
+  lastModified: 638867431512249848
+  FileSizes:
+  - Name: Desktop
+    Value: 1597760
+  Exists: 1
+--- !u!114 &-4372193665880968447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/book/book_flip_next
+  m_EditorClassIdentifier: 
+  Path: event:/book/book_flip_next
+  Guid:
+    Data1: -1860368759
+    Data2: 1293748310
+    Data3: 1760705174
+    Data4: 1831068339
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 692
+--- !u!114 &-2843370335516296342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/camera/camera_take_picture
+  m_EditorClassIdentifier: 
+  Path: event:/camera/camera_take_picture
+  Guid:
+    Data1: -11920421
+    Data2: 1176084816
+    Data3: -1244713060
+    Data4: 268176787
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4380
+--- !u!114 &-1477576317249727875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/camera/camera_keep_picture
+  m_EditorClassIdentifier: 
+  Path: event:/camera/camera_keep_picture
+  Guid:
+    Data1: 1306765638
+    Data2: 1158551696
+    Data3: 76611739
+    Data4: 1054086124
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 663
+--- !u!114 &-1429752020427340537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/camera/camera_zoom_out
+  m_EditorClassIdentifier: 
+  Path: event:/camera/camera_zoom_out
+  Guid:
+    Data1: 650636815
+    Data2: 1336442485
+    Data3: 683118755
+    Data4: -1809584529
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 432
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,11 +261,287 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
+  EditorBanks:
+  - {fileID: -7114574576164188412}
+  - {fileID: -5839953323439518742}
+  - {fileID: 9007474404129376577}
+  - {fileID: -4562999281147069190}
+  EditorEvents:
+  - {fileID: 3179579766574236387}
+  - {fileID: -2843370335516296342}
+  - {fileID: -6928326039667486643}
+  - {fileID: -1429752020427340537}
+  - {fileID: -1477576317249727875}
+  - {fileID: 2292061611919326509}
+  - {fileID: 7200320062514685660}
+  - {fileID: 1171091716243807328}
+  - {fileID: 5747504396863809379}
+  - {fileID: 1282225598757396307}
+  - {fileID: 8105519551363836709}
+  - {fileID: -4372193665880968447}
   EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
+  MasterBanks:
+  - {fileID: -5839953323439518742}
+  StringsBanks:
+  - {fileID: -7114574576164188412}
   cacheVersion: 131848
-  cacheTime: 0
-  SerializableEventsDict: []
+  cacheTime: 638867433131574701
+  SerializableEventsDict:
+  - key: event:/music/music
+    index: 0
+  - key: event:/camera/camera_take_picture
+    index: 1
+  - key: event:/env/amb
+    index: 2
+  - key: event:/camera/camera_zoom_out
+    index: 3
+  - key: event:/camera/camera_keep_picture
+    index: 4
+  - key: event:/camera/camera_enter
+    index: 5
+  - key: event:/camera/camera_exit
+    index: 6
+  - key: event:/camera/camera_zoom_in
+    index: 7
+  - key: event:/book/book_open
+    index: 8
+  - key: event:/book/book_close
+    index: 9
+  - key: event:/book/book_flip_prev
+    index: 10
+  - key: event:/book/book_flip_next
+    index: 11
+--- !u!114 &1171091716243807328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/camera/camera_zoom_in
+  m_EditorClassIdentifier: 
+  Path: event:/camera/camera_zoom_in
+  Guid:
+    Data1: -800913424
+    Data2: 1340362378
+    Data3: 898888357
+    Data4: 1000465148
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 432
+--- !u!114 &1282225598757396307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/book/book_close
+  m_EditorClassIdentifier: 
+  Path: event:/book/book_close
+  Guid:
+    Data1: -258744763
+    Data2: 1104061769
+    Data3: -1869221186
+    Data4: -1792672138
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 461
+--- !u!114 &2292061611919326509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/camera/camera_enter
+  m_EditorClassIdentifier: 
+  Path: event:/camera/camera_enter
+  Guid:
+    Data1: 21264716
+    Data2: 1152310051
+    Data3: 519392143
+    Data4: 675599561
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 432
+--- !u!114 &3179579766574236387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/music
+  m_EditorClassIdentifier: 
+  Path: event:/music/music
+  Guid:
+    Data1: 241554363
+    Data2: 1305907637
+    Data3: -1228485216
+    Data4: -1058874977
+  Banks:
+  - {fileID: 9007474404129376577}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7166299860268630792}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5747504396863809379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/book/book_open
+  m_EditorClassIdentifier: 
+  Path: event:/book/book_open
+  Guid:
+    Data1: -1190283488
+    Data2: 1311017694
+    Data3: -602336877
+    Data4: 531749141
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 923
+--- !u!114 &7200320062514685660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/camera/camera_exit
+  m_EditorClassIdentifier: 
+  Path: event:/camera/camera_exit
+  Guid:
+    Data1: 1146412391
+    Data2: 1308454680
+    Data3: -1338855256
+    Data4: -1927594381
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 432
+--- !u!114 &7218242998849392172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/amb/camera_focus
+  m_EditorClassIdentifier: 
+  Name: camera_focus
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 442478606
+    data2: 3133991853
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8105519551363836709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/book/book_flip_prev
+  m_EditorClassIdentifier: 
+  Path: event:/book/book_flip_prev
+  Guid:
+    Data1: -1577787795
+    Data2: 1143273590
+    Data3: -833713250
+    Data4: 1890398276
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 692
+--- !u!114 &9007474404129376577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/music.bank
+  Name: music
+  StudioPath: bank:/music
+  lastModified: 638867413403561534
+  FileSizes:
+  - Name: Desktop
+    Value: 588512
+  Exists: 1

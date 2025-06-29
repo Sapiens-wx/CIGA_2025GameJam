@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{2e776c49-14fb-4ad4-8d30-5b9c44f44954}">
+		<property name="assetPath">
+			<value>camera/camera_keep_pic.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.66344671201814054</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2c400609-c252-4bc0-accf-037d52993626}</destination>
+		</relationship>
+	</object>
+</objects>
