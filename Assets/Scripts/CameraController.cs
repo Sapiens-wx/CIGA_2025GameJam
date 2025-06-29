@@ -552,6 +552,7 @@ public class CameraController : MonoBehaviour
         }
         
         panelRect.anchoredPosition = endPos;
+        photoButton.interactable = true;
     }
     
     /// <summary>
@@ -580,6 +581,7 @@ public class CameraController : MonoBehaviour
         panelRect.anchoredPosition = endPos;
         photoDisplayPanel.SetActive(false);
         isDisplayingPhoto = false;
+        photoButton.interactable = false;
     }
     
     /// <summary>

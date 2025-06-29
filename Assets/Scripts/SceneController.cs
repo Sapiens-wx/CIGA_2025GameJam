@@ -9,19 +9,19 @@ public class SceneController : MonoBehaviour
 
     [SerializeField] private SceneType initialScene = SceneType.MainMenu;
 
-    private Dictionary<SceneType, string> sceneNames = new Dictionary<SceneType, string>
-{
-{ SceneType.MainMenu, "MainMenu" },
-{ SceneType.GamePlay1, "GamePlay1" },
-{ SceneType.GamePlay2, "GamePlay2" },
-{ SceneType.GamePlay3, "GamePlay3" },
-{ SceneType.GamePlay4, "GamePlay4" },
-{ SceneType.CG1, "CG1" },
-{ SceneType.CG4, "CG2" },
-{ SceneType.CG3, "CG3" },
-{ SceneType.CG4, "CG4" },
-{ SceneType.SpecialScene, "SpecialScene" }
+    private Dictionary<SceneType, string> sceneNames = new Dictionary<SceneType, string> {
+    { SceneType.MainMenu, "MainMenu" },
+    { SceneType.GamePlay1, "GamePlay1" },
+    { SceneType.GamePlay2, "GamePlay2" },
+    { SceneType.GamePlay3, "GamePlay3" },
+    { SceneType.GamePlay4, "GamePlay4" },
+    { SceneType.CG1, "CG1" },
+    { SceneType.CG2, "CG2" },
+    { SceneType.CG3, "CG3" },
+    { SceneType.CG4, "CG4" },
+    { SceneType.SpecialScene, "SpecialScene" }
 };
+
 
     public int CurrentDay { get; private set; } = 0;
 
@@ -37,17 +37,14 @@ public class SceneController : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    private void Start()
-    {
-        LoadScene(initialScene);
-    }
+
 
     public void LoadScene(SceneType scene, bool async = true)
     {
         if (scene == SceneType.GamePlay1 || scene == SceneType.GamePlay2 || scene == SceneType.GamePlay3 || scene == SceneType.GamePlay4)
         {
             CurrentDay++;
-            Debug.Log($"½øÈë Gameplay£¬µÚ {CurrentDay} Ìì");
+            Debug.Log($"è¿›å…¥ Gameplayï¼Œç¬¬ {CurrentDay} å¤©");
         }
 
         string sceneName = sceneNames[scene];
