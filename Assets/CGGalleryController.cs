@@ -1,25 +1,40 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
-public class CGGalleryController : MonoBehaviour
+public class CGSceneController : MonoBehaviour
 {
     [SerializeField] private Animator animator;
-    [SerializeField] private string parameterName = "CGIndex";
-    [SerializeField] private int totalCGs = 3;
-
-    private int currentIndex = 0;
+    [SerializeField] private string animationStateName = "CGState";
+    [SerializeField] private AudioClip cgAudio;
+    [SerializeField] private AudioSource audioSource;
 
     private void Start()
     {
-        PlayNextCG();
+        animator.Play(animationStateName);
+
+        if (cgAudio != null && audioSource != null)
+        {
+            audioSource.clip = cgAudio;
+            audioSource.Play();
+        }
+
+        StartCoroutine(WaitForAnimationEnd());
     }
 
-    private void PlayNextCG()
+    private IEnumerator WaitForAnimationEnd()
     {
 
-        
-            currentIndex = (currentIndex + 1) % totalCGs;
-        
+        yield return null;
 
-        animator.SetInteger(parameterName, currentIndex);
+        AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
+
+        while (!state.IsName(animationStateName) || state.normalizedTime < 1f)
+        {
+            yield return null;
+            state = animator.GetCurrentAnimatorStateInfo(0);
+        }
+
+        SceneController.Instance.LoadScene(SceneType.GamePlay1);
     }
 }

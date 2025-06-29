@@ -12,8 +12,14 @@ public class SceneController : MonoBehaviour
     private Dictionary<SceneType, string> sceneNames = new Dictionary<SceneType, string>
 {
 { SceneType.MainMenu, "MainMenu" },
-{ SceneType.GamePlay, "GamePlay" },
-{ SceneType.CGGallery, "CGGallery" },
+{ SceneType.GamePlay1, "GamePlay1" },
+{ SceneType.GamePlay2, "GamePlay2" },
+{ SceneType.GamePlay3, "GamePlay3" },
+{ SceneType.GamePlay4, "GamePlay4" },
+{ SceneType.CG1, "CG1" },
+{ SceneType.CG4, "CG2" },
+{ SceneType.CG3, "CG3" },
+{ SceneType.CG4, "CG4" },
 { SceneType.SpecialScene, "SpecialScene" }
 };
 
@@ -38,7 +44,7 @@ public class SceneController : MonoBehaviour
 
     public void LoadScene(SceneType scene, bool async = true)
     {
-        if (scene == SceneType.GamePlay)
+        if (scene == SceneType.GamePlay1 || scene == SceneType.GamePlay2 || scene == SceneType.GamePlay3 || scene == SceneType.GamePlay4)
         {
             CurrentDay++;
             Debug.Log($"进入 Gameplay，第 {CurrentDay} 天");

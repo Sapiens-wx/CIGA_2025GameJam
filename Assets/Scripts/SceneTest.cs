@@ -8,10 +8,10 @@ public class SceneSwitcher : MonoBehaviour
             SceneController.Instance.LoadScene(SceneType.MainMenu);
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
-            SceneController.Instance.LoadScene(SceneType.GamePlay);
+            SceneController.Instance.LoadScene(SceneType.GamePlay1);
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
-            SceneController.Instance.LoadScene(SceneType.CGGallery);
+            SceneController.Instance.LoadScene(SceneType.CG1);
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
             SceneController.Instance.LoadScene(SceneType.SpecialScene);
