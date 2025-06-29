@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine.LowLevelPhysics;
 using Unity.VisualScripting;
+using TMPro;
 
 public class CameraController : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class CameraController : MonoBehaviour
     public float flashDuration = 0.6f;
     public Image flashOverlay;
     public Image mask;
+    public GameObject NotifyText;
     public Sprite frameFocus;
     public float focusMaskAlpha = 0.9f;
     public Sprite frameNormal;
@@ -54,6 +56,16 @@ public class CameraController : MonoBehaviour
     private Coroutine aimingBgCoroutine = null;
     private Coroutine aimingMaskCoroutine = null;
 
+    void Awake()
+    {
+        print("CameraController Awake");
+        // Initialize items detected
+        itemsDetected.Clear();
+        foreach (GameObject item in photoItems)
+        {
+            itemsDetected.Add(false);
+        }
+    }
 
     void Start()
     {
@@ -83,17 +95,7 @@ public class CameraController : MonoBehaviour
         }
 
         // Initialize photo button interaction
-        // if (photoButton != null)
-        // {
-            photoButton.onClick.AddListener(OnPhotoClicked);
-        // }
-
-        // Initialize items detected
-        itemsDetected.Clear();
-        foreach (GameObject item in photoItems)
-        {
-            itemsDetected.Add(false);
-        }
+        photoButton.onClick.AddListener(OnPhotoClicked);
     }
 
     void Update()
@@ -562,7 +564,11 @@ public class CameraController : MonoBehaviour
     private IEnumerator SlidePhotoOut()
     {
         if (photoDisplayPanel == null) yield break;
-        
+
+        if (!itemsDetected.Contains(true))
+        {
+            NotifyText.gameObject.SetActive(true);
+        }
         RectTransform panelRect = photoDisplayPanel.GetComponent<RectTransform>();
         Vector2 startPos = panelRect.anchoredPosition;
         Vector2 endPos = new Vector2(0, -panelRect.rect.height);
@@ -579,24 +585,33 @@ public class CameraController : MonoBehaviour
             yield return null;
         }
         
+        
         panelRect.anchoredPosition = endPos;
         photoDisplayPanel.SetActive(false);
-        isDisplayingPhoto = false;
         photoButton.interactable = false;
-        switch (SceneController.Instance.CurrentDay)
+        if (itemsDetected.Contains(true))
         {
-            case 1:
-                SceneController.Instance.LoadScene(SceneType.CG1);
-                break;
-            case 2:
-                SceneController.Instance.LoadScene(SceneType.CG2);
-                break;
-            case 3:
-                SceneController.Instance.LoadScene(SceneType.CG3);
-                break;
-            case 4:
-                SceneController.Instance.LoadScene(SceneType.CG4);
-                break;
+            switch (SceneController.Instance.CurrentDay)
+            {
+                case 1:
+                    SceneController.Instance.LoadScene(SceneType.CG1);
+                    break;
+                case 2:
+                    SceneController.Instance.LoadScene(SceneType.CG2);
+                    break;
+                case 3:
+                    SceneController.Instance.LoadScene(SceneType.CG3);
+                    break;
+                case 4:
+                    SceneController.Instance.LoadScene(SceneType.CG4);
+                    break;
+            }
+        }
+        else
+        {
+            yield return new WaitForSeconds(1.5f);
+            NotifyText.gameObject.SetActive(false);
+            isDisplayingPhoto = false;
         }
     }
     
@@ -625,11 +640,6 @@ public class CameraController : MonoBehaviour
     {
         // Hide photo panel
         StartCoroutine(SlidePhotoOut());
-        /* 
-            * important: only set isAnimating to false when player click photo button
-            * otherwise, no player action allowed   
-        */
-        isAnimating = false;
     }
     
     #endregion
