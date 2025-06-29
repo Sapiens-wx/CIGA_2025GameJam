@@ -416,7 +416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620a5cdea7f265840aac356ab39b5417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1236613973}
   animationStateName: CGState
   cgAudio: {fileID: 0}
   audioSource: {fileID: 0}
