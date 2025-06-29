@@ -796,6 +796,7 @@ public class CameraController : MonoBehaviour
     /// </summary>
     private IEnumerator SetPlayerSprite(bool isShow)
     {
+        if (GM.instance.backgroundController.playerSprite == null) yield break;
         float duration = 0.5f;
         float elapsed = 0f;
         float startAlpha = GM.instance.backgroundController.playerSprite.color.a;
