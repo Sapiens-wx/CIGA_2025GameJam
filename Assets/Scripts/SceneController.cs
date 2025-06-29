@@ -44,7 +44,7 @@ public class SceneController : MonoBehaviour
         if (scene == SceneType.GamePlay1 || scene == SceneType.GamePlay2 || scene == SceneType.GamePlay3 || scene == SceneType.GamePlay4)
         {
             CurrentDay++;
-            Debug.Log($"½øÈë Gameplay£¬µÚ {CurrentDay} Ìì");
+            Debug.Log($"è¿›å…¥ Gameplayï¼Œç¬¬ {CurrentDay} å¤©");
         }
 
         string sceneName = sceneNames[scene];

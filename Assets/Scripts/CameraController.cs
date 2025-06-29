@@ -83,10 +83,10 @@ public class CameraController : MonoBehaviour
         }
 
         // Initialize photo button interaction
-        if (photoButton != null)
-        {
+        // if (photoButton != null)
+        // {
             photoButton.onClick.AddListener(OnPhotoClicked);
-        }
+        // }
 
         // Initialize items detected
         itemsDetected.Clear();
@@ -552,6 +552,7 @@ public class CameraController : MonoBehaviour
         }
         
         panelRect.anchoredPosition = endPos;
+        photoButton.interactable = true;
     }
     
     /// <summary>
@@ -580,6 +581,7 @@ public class CameraController : MonoBehaviour
         panelRect.anchoredPosition = endPos;
         photoDisplayPanel.SetActive(false);
         isDisplayingPhoto = false;
+        photoButton.interactable = false;
     }
     
     /// <summary>
