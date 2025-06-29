@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -29,6 +30,11 @@ public class Book : MonoBehaviour
     void ToggleBook(){
         if(shakeCoro!=null) return;
         if(isOpen){ //close book
+            try{
+                if(AudioManager.instance!=null)
+                    AudioManager.instance.AudioCloseBook();
+            } catch(Exception e){
+            }
             if(openCoroutine!=null){
                 StopCoroutine(openCoroutine);
                 openCoroutine=null;
@@ -36,6 +42,11 @@ public class Book : MonoBehaviour
             closeCoroutine=StartCoroutine(MoveTo(hidePosition,()=>{DisplayPage(-1); closeCoroutine=null;}));
         }
         else{ //open book
+            try{
+                if(AudioManager.instance!=null)
+                    AudioManager.instance.AudioOpenBook();
+            } catch(Exception e){
+            }
             if(closeCoroutine!=null){
                 StopCoroutine(closeCoroutine);
                 closeCoroutine=null;
@@ -66,6 +77,15 @@ public class Book : MonoBehaviour
         if(newPage>=0&&newPage<pages.Length){
             currentPage=newPage;
             DisplayPage(currentPage);
+            try{
+                if(AudioManager.instance!=null){
+                    if(offset>0)
+                        AudioManager.instance.AudioNextPage();
+                    else
+                        AudioManager.instance.AudioPrevPage();
+                }
+            } catch(Exception e){
+            }
         }
         shakeCoro=StartCoroutine(Shake(-offset));
     }
