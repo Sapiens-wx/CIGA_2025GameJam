@@ -161,6 +161,13 @@ MonoBehaviour:
       Data3: 76611739
       Data4: 1054086124
     Path: event:/camera/camera_keep_picture
+  cameraTakePicMenu:
+    Guid:
+      Data1: -1955202104
+      Data2: 1216484791
+      Data3: -1484901484
+      Data4: 1487956890
+    Path: event:/camera/camera_take_picture_menu
   cgBlue:
     Guid:
       Data1: -1010084048

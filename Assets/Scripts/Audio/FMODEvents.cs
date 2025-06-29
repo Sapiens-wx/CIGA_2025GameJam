@@ -21,6 +21,7 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference cameraZoomOut;
     [field: SerializeField] public EventReference cameraTakePic;
     [field: SerializeField] public EventReference cameraKeepPic;
+    [field: SerializeField] public EventReference cameraTakePicMenu;
 
     [field: Header("CG")]
     [field: SerializeField] public EventReference cgBlue;

@@ -13,8 +13,6 @@ public class CG3Controller : MonoBehaviour
     {
         animator.Play(animationStateName);
 
-        AudioManager.instance.AudioPlayCG(AudioCGType.Red);
-
         StartCoroutine(WaitForAnimationEnd());
     }
 

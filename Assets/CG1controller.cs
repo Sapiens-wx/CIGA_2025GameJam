@@ -13,8 +13,6 @@ public class CG1Controller : MonoBehaviour
     {
         animator.Play(animationStateName);
 
-        AudioManager.instance.AudioPlayCG(AudioCGType.Blue);
-
         StartCoroutine(WaitForAnimationEnd());
     }
 

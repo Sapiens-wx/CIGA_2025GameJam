@@ -67,10 +67,10 @@ MonoBehaviour:
   Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638867539409029813
+  lastModified: 638867823300252641
   FileSizes:
   - Name: Desktop
-    Value: 1746
+    Value: 1794
   Exists: 1
 --- !u!114 &-7090277243794855395
 MonoBehaviour:
@@ -170,7 +170,7 @@ MonoBehaviour:
   Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638867539409009760
+  lastModified: 638867823300222459
   FileSizes:
   - Name: Desktop
     Value: 1454
@@ -217,10 +217,10 @@ MonoBehaviour:
   Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 638867805095696094
+  lastModified: 638867825146800058
   FileSizes:
   - Name: Desktop
-    Value: 1900096
+    Value: 1900960
   Exists: 1
 --- !u!114 &-4372193665880968447
 MonoBehaviour:
@@ -275,7 +275,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4380
+  Length: 3857
+--- !u!114 &-1784344340610865237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/camera/camera_take_picture_menu
+  m_EditorClassIdentifier: 
+  Path: event:/camera/camera_take_picture_menu
+  Guid:
+    Data1: -1955202104
+    Data2: 1216484791
+    Data3: -1484901484
+    Data4: 1487956890
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 428
 --- !u!114 &-1477576317249727875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,13 +391,14 @@ MonoBehaviour:
   - {fileID: -6360810463287507229}
   - {fileID: -7090277243794855395}
   - {fileID: -4737185798745048793}
+  - {fileID: -1784344340610865237}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5839953323439518742}
   StringsBanks:
   - {fileID: -7114574576164188412}
   cacheVersion: 131848
-  cacheTime: 638867805095696094
+  cacheTime: 638867825146800058
   SerializableEventsDict:
   - key: event:/music/music
     index: 0
@@ -404,6 +432,8 @@ MonoBehaviour:
     index: 14
   - key: event:/cg/cg_purple
     index: 15
+  - key: event:/camera/camera_take_picture_menu
+    index: 16
 --- !u!114 &1171091716243807328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -660,7 +690,7 @@ MonoBehaviour:
   Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/music.bank
   Name: music
   StudioPath: bank:/music
-  lastModified: 638867805075730218
+  lastModified: 638867807781702750
   FileSizes:
   - Name: Desktop
     Value: 588512

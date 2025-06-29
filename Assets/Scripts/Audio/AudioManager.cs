@@ -9,7 +9,10 @@ public enum SoundByScene
 {
     Menu,
     Game,
-    CG
+    CG1,
+    CG2,
+    CG3,
+    CG4
 }
 
 public enum MusicIndex
@@ -94,9 +97,25 @@ public class AudioManager : MonoBehaviour
                 SetAmbienceIndex(AmbienceIndex.Room);
                 SetMusicIndex(MusicIndex.Empty);
                 break;
-            case SoundByScene.CG:
+            case SoundByScene.CG1:
                 SetAmbienceIndex(AmbienceIndex.Empty);
                 SetMusicIndex(MusicIndex.Empty);
+                AudioPlayCG(AudioCGType.Blue);
+                break;
+            case SoundByScene.CG2:
+                SetAmbienceIndex(AmbienceIndex.Empty);
+                SetMusicIndex(MusicIndex.Empty);
+                AudioPlayCG(AudioCGType.Red);
+                break;
+            case SoundByScene.CG3:
+                SetAmbienceIndex(AmbienceIndex.Empty);
+                SetMusicIndex(MusicIndex.Empty);
+                AudioPlayCG(AudioCGType.Purple);
+                break;
+            case SoundByScene.CG4:
+                SetAmbienceIndex(AmbienceIndex.Empty);
+                SetMusicIndex(MusicIndex.Empty);
+                AudioPlayCG(AudioCGType.Apple);
                 break;
         }
     }
@@ -297,7 +316,15 @@ public class AudioManager : MonoBehaviour
         float timer = 0f;
         float totalTime = 0.25f;
 
-        CreateEventEmitterObject(FMODEvents.instance.cameraTakePic, this.transform);
+        if (currentSceneForSound == SoundByScene.Menu)
+        {
+            CreateEventEmitterObject(FMODEvents.instance.cameraTakePicMenu, this.transform);
+        }
+        else
+        {
+            CreateEventEmitterObject(FMODEvents.instance.cameraTakePic, this.transform);
+
+        }
 
         while (timer < totalTime)
         {
@@ -307,7 +334,6 @@ public class AudioManager : MonoBehaviour
         }
         yield return null;
     }
-
     public void AudioCameraKeepPic()
     {
         CreateEventEmitterObject(FMODEvents.instance.cameraKeepPic, this.transform);

@@ -326,7 +326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1236613973}
   animationStateName: CGBlue
-  cgAudio: {fileID: 8300000, guid: 6bd568c66fd5dbb4b8855a3369bc7034, type: 3}
+  cgAudio: {fileID: 0}
   audioSource: {fileID: 0}
 --- !u!212 &1236613972
 SpriteRenderer:
@@ -430,7 +430,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1624401579823430907, guid: 7806597bc62dfdf4289e785a7e8f04b1, type: 3}
       propertyPath: currentSceneForSound
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2692807312819512606, guid: 7806597bc62dfdf4289e785a7e8f04b1, type: 3}
       propertyPath: m_Name

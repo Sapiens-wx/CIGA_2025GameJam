@@ -13,8 +13,6 @@ public class CG2Controller : MonoBehaviour
     {
         animator.Play(animationStateName);
 
-        AudioManager.instance.AudioPlayCG(AudioCGType.Purple);
-
         StartCoroutine(WaitForAnimationEnd());
     }
 

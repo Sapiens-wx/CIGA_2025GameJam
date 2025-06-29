@@ -136,15 +136,18 @@ public class CameraController : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
+                AudioManager.instance.AudioCameraZoomIn();
                 StartAiming();
             }
             else if (Input.GetMouseButtonUp(0))
             {
                 if (canTakePhoto)
                 {
+                    AudioManager.instance.StartCoroutine(AudioManager.instance.AudioCameraTakePic());
                     TakePhoto();
                 }
                 else{
+                    AudioManager.instance.AudioCameraZoomOut();
                     StopAiming();
                 }
             }
@@ -156,10 +159,12 @@ public class CameraController : MonoBehaviour
         {
             if (!isCameraFrameActive)
             {
+                AudioManager.instance.StartCoroutine(AudioManager.instance.AudioCameraEnter());
                 ShowCameraFrame();
             }
             else
             {
+                AudioManager.instance.StartCoroutine(AudioManager.instance.AudioCameraExit());
                 HideCameraFrame();
             }
         }
@@ -639,6 +644,7 @@ public class CameraController : MonoBehaviour
     private void OnPhotoClicked()
     {
         // Hide photo panel
+        AudioManager.instance.AudioCameraKeepPic();
         StartCoroutine(SlidePhotoOut());
     }
     
