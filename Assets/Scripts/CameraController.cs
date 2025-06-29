@@ -228,9 +228,17 @@ public class CameraController : MonoBehaviour
         HideCameraFrame();
         StartCoroutine(AnimateFrameZoom(false));
         StartCoroutine(FlashEffect());
-        
-        yield return new WaitForSeconds(1f);
-        ShowCapturedPhoto();
+        if (photoDisplayPanel != null)
+        {
+            yield return new WaitForSeconds(1f);
+            ShowCapturedPhoto();
+        }
+        else
+        {
+            GM.instance.backgroundController.background.SetActive(false);
+            yield return new WaitForSeconds(2f);
+            SceneController.Instance.LoadScene(SceneType.GamePlay1);
+        }
         yield break;
     }
     #endregion
@@ -252,6 +260,7 @@ public class CameraController : MonoBehaviour
             
             // Start animation
             StartCoroutine(AnimateCameraIn());
+            StartCoroutine(SetPlayerSprite(false));
             BackgroundController bgController = GM.instance.backgroundController;
             StartCoroutine(bgController.BackgroundZoom( bgController.cameraBackgroundScale));
 
@@ -272,6 +281,7 @@ public class CameraController : MonoBehaviour
             
             // Start fade out animation
             StartCoroutine(AnimateCameraOut());
+            StartCoroutine(SetPlayerSprite(true));
             BackgroundController bgController = GM.instance.backgroundController;
             StartCoroutine(bgController.BackgroundZoom(bgController.originalBackgroundScale));
             isCameraFrameActive = false;
@@ -777,6 +787,26 @@ public class CameraController : MonoBehaviour
             yield return null;
         }
         mask.color = new Color(0f, 0f, 0f, isDarken ? focusMaskAlpha : normalMaskAlpha);
+    }
+    
+    /// <summary>
+    /// Set player sprite to show or hide
+    /// </summary>
+    private IEnumerator SetPlayerSprite(bool isShow)
+    {
+        float duration = 0.5f;
+        float elapsed = 0f;
+        float startAlpha = GM.instance.backgroundController.playerSprite.color.a;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float progress = elapsed / duration;
+            float alpha = Mathf.Lerp(startAlpha, isShow ? 1f : 0f, progress);
+            GM.instance.backgroundController.playerSprite.color = new Color(1f, 1f, 1f, alpha);
+            yield return null;
+        }
+        GM.instance.backgroundController.playerSprite.color = new Color(1f, 1f, 1f, isShow ? 1f : 0f);
     }
     #endregion
 }

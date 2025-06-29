@@ -6,6 +6,7 @@ public class BackgroundController: MonoBehaviour
 {
     [Header("Background Settings")]
     public GameObject background;
+    public SpriteRenderer playerSprite;
     public float maxTiltAngle = 15f;
     public float tiltSpeed = 5f;
     public float shiftSpeed = 5f;
