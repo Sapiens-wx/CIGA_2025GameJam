@@ -27,6 +27,7 @@ public class Book : MonoBehaviour
             ToggleBook();
     }
     void ToggleBook(){
+        if(shakeCoro!=null) return;
         if(isOpen){ //close book
             if(openCoroutine!=null){
                 StopCoroutine(openCoroutine);
@@ -60,7 +61,7 @@ public class Book : MonoBehaviour
         return SceneController.Instance.CurrentDay;
     }
     public void NextPage(int offset){
-        if(shakeCoro!=null) return;
+        if(shakeCoro!=null||openCoroutine!=null||closeCoroutine!=null) return;
         int newPage=currentPage+offset;
         if(newPage>=0&&newPage<pages.Length){
             currentPage=newPage;
