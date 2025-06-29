@@ -17,7 +17,7 @@ public class AppleCG : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-               SceneController.Instance.LoadScene(SceneType.GamePlay4);
+               SceneController.Instance.LoadScene(SceneType.MainMenu);
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
