@@ -277,7 +277,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1624401579823430907, guid: 7806597bc62dfdf4289e785a7e8f04b1, type: 3}
       propertyPath: currentSceneForSound
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2692807312819512606, guid: 7806597bc62dfdf4289e785a7e8f04b1, type: 3}
       propertyPath: m_Name
