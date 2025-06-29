@@ -216,6 +216,8 @@ GameObject:
   m_Component:
   - component: {fileID: 899322373}
   - component: {fileID: 899322372}
+  - component: {fileID: 899322374}
+  - component: {fileID: 899322375}
   m_Layer: 0
   m_Name: "\u672A\u547D\u540D\u4F5C\u54C1 (39)_0"
   m_TagString: Untagged
@@ -293,6 +295,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &899322374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899322371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 215e7fa733c7d0543ac1c8cc9d07d9e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.2
+  frequency: 0.1
+--- !u!114 &899322375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899322371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 215e7fa733c7d0543ac1c8cc9d07d9e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.2
+  frequency: 0.1
 --- !u!1 &1578317094
 GameObject:
   m_ObjectHideFlags: 0
