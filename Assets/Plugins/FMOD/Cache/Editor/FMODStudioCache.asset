@@ -67,11 +67,38 @@ MonoBehaviour:
   Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638867433131574701
+  lastModified: 638867539409029813
   FileSizes:
   - Name: Desktop
-    Value: 1576
+    Value: 1746
   Exists: 1
+--- !u!114 &-7090277243794855395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/cg/cg_apple
+  m_EditorClassIdentifier: 
+  Path: event:/cg/cg_apple
+  Guid:
+    Data1: -613008535
+    Data2: 1139144330
+    Data3: 100864429
+    Data4: -1998552507
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10285
 --- !u!114 &-6928326039667486643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,6 +128,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-6360810463287507229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/cg/cg_red
+  m_EditorClassIdentifier: 
+  Path: event:/cg/cg_red
+  Guid:
+    Data1: -672647088
+    Data2: 1310856153
+    Data3: -233595764
+    Data4: 1044156452
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10285
 --- !u!114 &-5839953323439518742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,11 +170,38 @@ MonoBehaviour:
   Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638867433131564648
+  lastModified: 638867539409009760
   FileSizes:
   - Name: Desktop
     Value: 1454
   Exists: 1
+--- !u!114 &-4737185798745048793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/cg/cg_purple
+  m_EditorClassIdentifier: 
+  Path: event:/cg/cg_purple
+  Guid:
+    Data1: -1977205524
+    Data2: 1286189309
+    Data3: -900512350
+    Data4: -1832508307
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10285
 --- !u!114 &-4562999281147069190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,10 +217,10 @@ MonoBehaviour:
   Path: Assets/Audio/FMODFiles/CigaGameJamFMODFile/Build/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 638867431512249848
+  lastModified: 638867540596015108
   FileSizes:
   - Name: Desktop
-    Value: 1597760
+    Value: 1900096
   Exists: 1
 --- !u!114 &-4372193665880968447
 MonoBehaviour:
@@ -279,13 +360,17 @@ MonoBehaviour:
   - {fileID: 1282225598757396307}
   - {fileID: 8105519551363836709}
   - {fileID: -4372193665880968447}
+  - {fileID: 4700113651051589019}
+  - {fileID: -6360810463287507229}
+  - {fileID: -7090277243794855395}
+  - {fileID: -4737185798745048793}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5839953323439518742}
   StringsBanks:
   - {fileID: -7114574576164188412}
   cacheVersion: 131848
-  cacheTime: 638867433131574701
+  cacheTime: 638867540596015108
   SerializableEventsDict:
   - key: event:/music/music
     index: 0
@@ -311,6 +396,14 @@ MonoBehaviour:
     index: 10
   - key: event:/book/book_flip_next
     index: 11
+  - key: event:/cg/cg_blue
+    index: 12
+  - key: event:/cg/cg_red
+    index: 13
+  - key: event:/cg/cg_apple
+    index: 14
+  - key: event:/cg/cg_purple
+    index: 15
 --- !u!114 &1171091716243807328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,6 +513,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &4700113651051589019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/cg/cg_blue
+  m_EditorClassIdentifier: 
+  Path: event:/cg/cg_blue
+  Guid:
+    Data1: -1010084048
+    Data2: 1104812995
+    Data3: -418884942
+    Data4: -918001606
+  Banks:
+  - {fileID: -4562999281147069190}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10285
 --- !u!114 &5747504396863809379
 MonoBehaviour:
   m_ObjectHideFlags: 0

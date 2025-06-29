@@ -161,6 +161,34 @@ MonoBehaviour:
       Data3: 76611739
       Data4: 1054086124
     Path: event:/camera/camera_keep_picture
+  cgBlue:
+    Guid:
+      Data1: -1010084048
+      Data2: 1104812995
+      Data3: -418884942
+      Data4: -918001606
+    Path: event:/cg/cg_blue
+  cgRed:
+    Guid:
+      Data1: -672647088
+      Data2: 1310856153
+      Data3: -233595764
+      Data4: 1044156452
+    Path: event:/cg/cg_red
+  cgPurple:
+    Guid:
+      Data1: -1977205524
+      Data2: 1286189309
+      Data3: -900512350
+      Data4: -1832508307
+    Path: event:/cg/cg_purple
+  cgApple:
+    Guid:
+      Data1: -613008535
+      Data2: 1139144330
+      Data3: 100864429
+      Data4: -1998552507
+    Path: event:/cg/cg_apple
 --- !u!1 &8315406894037651300
 GameObject:
   m_ObjectHideFlags: 0
