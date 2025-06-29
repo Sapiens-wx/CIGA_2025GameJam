@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class CGSceneController : MonoBehaviour
+public class CG3Controller : MonoBehaviour
 {
     [SerializeField] private Animator animator;
     [SerializeField] private string animationStateName = "CGState";
@@ -13,7 +13,7 @@ public class CGSceneController : MonoBehaviour
     {
         animator.Play(animationStateName);
 
-        AudioManager.instance.AudioPlayCG(AudioCGType.Apple);
+        AudioManager.instance.AudioPlayCG(AudioCGType.Red);
 
         StartCoroutine(WaitForAnimationEnd());
     }
@@ -31,6 +31,6 @@ public class CGSceneController : MonoBehaviour
             state = animator.GetCurrentAnimatorStateInfo(0);
         }
 
-        SceneController.Instance.LoadScene(SceneType.MainMenu);
+        SceneController.Instance.LoadScene(SceneType.GamePlay4);
     }
 }
