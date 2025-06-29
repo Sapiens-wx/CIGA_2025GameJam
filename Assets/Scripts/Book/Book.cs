@@ -10,11 +10,13 @@ public class Book : MonoBehaviour
     [SerializeField] float duration;
     [SerializeField] float shakeAmount, shakeDuration;
 
+    public static Book instance;
     bool isOpen;
     Vector3 displayPosition, hidePosition;
     int currentPage;
     Coroutine openCoroutine, closeCoroutine, shakeCoro;
     void Awake(){
+        instance=this;
         DisplayPage(-1);
         displayPosition=panel.transform.position;
         hidePosition=displayPosition;
@@ -118,5 +120,11 @@ public class Book : MonoBehaviour
             yield return wait;
         }
         shakeCoro=null;
+    }
+    public void UpdateText(Texture2D texture){
+        int idx=GetCurrentPageIndex();
+        if(idx<0||idx>=pages.Length) return;
+        Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+        pages[idx].img.sprite=sprite;
     }
 }
