@@ -261,6 +261,7 @@ public class CameraController : MonoBehaviour
             // Start animation
             StartCoroutine(AnimateCameraIn());
             StartCoroutine(SetPlayerSprite(false));
+            StartCoroutine(SetPlayerSprite(false));
             BackgroundController bgController = GM.instance.backgroundController;
             StartCoroutine(bgController.BackgroundZoom( bgController.cameraBackgroundScale));
 
@@ -281,6 +282,7 @@ public class CameraController : MonoBehaviour
             
             // Start fade out animation
             StartCoroutine(AnimateCameraOut());
+            StartCoroutine(SetPlayerSprite(true));
             StartCoroutine(SetPlayerSprite(true));
             BackgroundController bgController = GM.instance.backgroundController;
             StartCoroutine(bgController.BackgroundZoom(bgController.originalBackgroundScale));
@@ -809,4 +811,5 @@ public class CameraController : MonoBehaviour
         GM.instance.backgroundController.playerSprite.color = new Color(1f, 1f, 1f, isShow ? 1f : 0f);
     }
     #endregion
+
 }
