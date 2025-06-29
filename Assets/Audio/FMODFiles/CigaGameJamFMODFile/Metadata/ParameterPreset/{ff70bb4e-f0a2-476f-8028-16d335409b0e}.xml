@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{ff70bb4e-f0a2-476f-8028-16d335409b0e}">
+		<property name="name">
+			<value>camera_focus</value>
+		</property>
+		<relationship name="folder">
+			<destination>{04873908-2da5-4242-91b9-981d494a9975}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{02d82dc9-77c4-40b1-ac63-265e285538a7}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{02d82dc9-77c4-40b1-ac63-265e285538a7}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

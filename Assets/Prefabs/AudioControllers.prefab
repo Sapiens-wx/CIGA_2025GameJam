@@ -1,0 +1,209 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2692807312819512606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3819137570001140333}
+  m_Layer: 0
+  m_Name: AudioControllers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3819137570001140333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2692807312819512606}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6210170751794293407}
+  - {fileID: 1741567381168451348}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4670558807341633066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1741567381168451348}
+  - component: {fileID: 1957016309870375014}
+  m_Layer: 0
+  m_Name: FMODEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1741567381168451348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4670558807341633066}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3819137570001140333}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1957016309870375014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4670558807341633066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 476dba0d9a092e8448a25d86b0a28b8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music:
+    Guid:
+      Data1: 241554363
+      Data2: 1305907637
+      Data3: -1228485216
+      Data4: -1058874977
+    Path: event:/music/music
+  ambience:
+    Guid:
+      Data1: -1693708621
+      Data2: 1217509492
+      Data3: 577401500
+      Data4: -31076615
+    Path: event:/env/amb
+  bookFlipNext:
+    Guid:
+      Data1: -1860368759
+      Data2: 1293748310
+      Data3: 1760705174
+      Data4: 1831068339
+    Path: event:/book/book_flip_next
+  bookFlipPrev:
+    Guid:
+      Data1: -1577787795
+      Data2: 1143273590
+      Data3: -833713250
+      Data4: 1890398276
+    Path: event:/book/book_flip_prev
+  bookOpen:
+    Guid:
+      Data1: -1190283488
+      Data2: 1311017694
+      Data3: -602336877
+      Data4: 531749141
+    Path: event:/book/book_open
+  bookClose:
+    Guid:
+      Data1: -258744763
+      Data2: 1104061769
+      Data3: -1869221186
+      Data4: -1792672138
+    Path: event:/book/book_close
+  cameraEnter:
+    Guid:
+      Data1: 21264716
+      Data2: 1152310051
+      Data3: 519392143
+      Data4: 675599561
+    Path: event:/camera/camera_enter
+  cameraExit:
+    Guid:
+      Data1: 1146412391
+      Data2: 1308454680
+      Data3: -1338855256
+      Data4: -1927594381
+    Path: event:/camera/camera_exit
+  cameraZoomIn:
+    Guid:
+      Data1: -800913424
+      Data2: 1340362378
+      Data3: 898888357
+      Data4: 1000465148
+    Path: event:/camera/camera_zoom_in
+  cameraZoomOut:
+    Guid:
+      Data1: 650636815
+      Data2: 1336442485
+      Data3: 683118755
+      Data4: -1809584529
+    Path: event:/camera/camera_zoom_out
+  cameraTakePic:
+    Guid:
+      Data1: -11920421
+      Data2: 1176084816
+      Data3: -1244713060
+      Data4: 268176787
+    Path: event:/camera/camera_take_picture
+  cameraKeepPic:
+    Guid:
+      Data1: 1306765638
+      Data2: 1158551696
+      Data3: 76611739
+      Data4: 1054086124
+    Path: event:/camera/camera_keep_picture
+--- !u!1 &8315406894037651300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6210170751794293407}
+  - component: {fileID: 1624401579823430907}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6210170751794293407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8315406894037651300}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3819137570001140333}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1624401579823430907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8315406894037651300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100b2cd43e3bb594f8d0cd1b62eee18b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSceneForSound: 1
+  audioEmitter: {fileID: 4633135525612996441, guid: 1f0ba059a62cc2045b586646c29e484c, type: 3}
