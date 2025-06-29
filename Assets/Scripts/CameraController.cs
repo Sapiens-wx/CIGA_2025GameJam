@@ -557,6 +557,7 @@ public class CameraController : MonoBehaviour
     
     /// <summary>
     /// Hide photo panel with slide animation
+    /// jump to next scene
     /// </summary>
     private IEnumerator SlidePhotoOut()
     {
@@ -582,6 +583,21 @@ public class CameraController : MonoBehaviour
         photoDisplayPanel.SetActive(false);
         isDisplayingPhoto = false;
         photoButton.interactable = false;
+        switch (SceneController.Instance.CurrentDay)
+        {
+            case 1:
+                SceneController.Instance.LoadScene(SceneType.CG1);
+                break;
+            case 2:
+                SceneController.Instance.LoadScene(SceneType.CG2);
+                break;
+            case 3:
+                SceneController.Instance.LoadScene(SceneType.CG3);
+                break;
+            case 4:
+                SceneController.Instance.LoadScene(SceneType.CG4);
+                break;
+        }
     }
     
     /// <summary>
