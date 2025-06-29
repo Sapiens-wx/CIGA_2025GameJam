@@ -21,6 +21,12 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference cameraZoomOut;
     [field: SerializeField] public EventReference cameraTakePic;
     [field: SerializeField] public EventReference cameraKeepPic;
+
+    [field: Header("CG")]
+    [field: SerializeField] public EventReference cgBlue;
+    [field: SerializeField] public EventReference cgRed;
+    [field: SerializeField] public EventReference cgPurple;
+    [field: SerializeField] public EventReference cgApple;
     public static FMODEvents instance { get; private set; }
     private void Awake()
     {

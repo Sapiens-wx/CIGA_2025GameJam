@@ -8,7 +8,8 @@ using UnityEngine;
 public enum SoundByScene
 {
     Menu,
-    Game
+    Game,
+    CG
 }
 
 public enum MusicIndex
@@ -34,6 +35,14 @@ public enum PrintState
 {
     Correct,
     Wrong
+}
+
+public enum AudioCGType
+{
+    Red,
+    Blue, 
+    Purple,
+    Apple
 }
 
 public class AudioManager : MonoBehaviour
@@ -83,6 +92,10 @@ public class AudioManager : MonoBehaviour
                 break;
             case SoundByScene.Game:
                 SetAmbienceIndex(AmbienceIndex.Room);
+                SetMusicIndex(MusicIndex.Empty);
+                break;
+            case SoundByScene.CG:
+                SetAmbienceIndex(AmbienceIndex.Empty);
                 SetMusicIndex(MusicIndex.Empty);
                 break;
         }
@@ -298,6 +311,25 @@ public class AudioManager : MonoBehaviour
     public void AudioCameraKeepPic()
     {
         CreateEventEmitterObject(FMODEvents.instance.cameraKeepPic, this.transform);
+    }
+
+    public void AudioPlayCG(AudioCGType type)
+    {
+        switch (type)
+        {
+            case AudioCGType.Red:
+                CreateEventEmitterObject(FMODEvents.instance.cgRed, this.transform);
+                break;
+            case AudioCGType.Blue:
+                CreateEventEmitterObject(FMODEvents.instance.cgBlue, this.transform);
+                break;
+            case AudioCGType.Purple:
+                CreateEventEmitterObject(FMODEvents.instance.cgPurple, this.transform);
+                break;
+            case AudioCGType.Apple:
+                CreateEventEmitterObject(FMODEvents.instance.cgApple, this.transform);
+                break;
+        }
     }
 
     public void CleanEmitter(StudioEventEmitter emitter)

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      eating_b_00128_0: -5995398399077783303
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
